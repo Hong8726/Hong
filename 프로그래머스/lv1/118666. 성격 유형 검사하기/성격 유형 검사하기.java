@@ -10,59 +10,35 @@ class Solution {
         for(int i=0; i<choices.length;i++){
             if(survey[i].equals("RT")||survey[i].equals("TR")){
                 if(survey[i].equals("RT")){
-                    if(choices[i]>standard){
-                        type1[1] += choices[i]-standard;
-                    } else{
-                        type1[0] += standard-choices[i];
-                    }
+                    if(choices[i]>standard) type1[1] += choices[i]-standard;
+                    else type1[0] += standard-choices[i];
                 } else{
-                    if(choices[i]>standard){
-                        type1[0] += choices[i]-standard;
-                    } else{
-                        type1[1] += standard-choices[i];
-                    }
+                    if(choices[i]>standard) type1[0] += choices[i]-standard;
+                    else type1[1] += standard-choices[i];
                 }
             }else if(survey[i].equals("CF")||survey[i].equals("FC")){
                 if(survey[i].equals("CF")){
-                    if(choices[i]>standard){
-                        type2[1] += choices[i]-standard;
-                    } else{
-                        type2[0] += standard-choices[i];
-                    }
+                    if(choices[i]>standard) type2[1] += choices[i]-standard;
+                    else type2[0] += standard-choices[i];
                 } else{
-                    if(choices[i]>standard){
-                        type2[0] += choices[i]-standard;
-                    } else{
-                        type2[1] += standard-choices[i];
-                    }
+                    if(choices[i]>standard) type2[0] += choices[i]-standard;
+                    else type2[1] += standard-choices[i];
                 }
             }else if(survey[i].equals("JM")||survey[i].equals("MJ")){
                 if(survey[i].equals("JM")){
-                    if(choices[i]>standard){
-                        type3[1] += choices[i]-standard;
-                    } else{
-                        type3[0] += standard-choices[i];
-                    }
+                    if(choices[i]>standard) type3[1] += choices[i]-standard;
+                    else type3[0] += standard-choices[i];
                 } else{
-                    if(choices[i]>standard){
-                        type3[0] += choices[i]-standard;
-                    } else{
-                        type3[1] += standard-choices[i];
-                    }
+                    if(choices[i]>standard) type3[0] += choices[i]-standard;
+                    else type3[1] += standard-choices[i];
                 }
             }else if(survey[i].equals("AN")||survey[i].equals("NA")){
                 if(survey[i].equals("AN")){
-                    if(choices[i]>standard){
-                        type4[1] += choices[i]-standard;
-                    } else{
-                        type4[0] += standard-choices[i];
-                    }
+                    if(choices[i]>standard) type4[1] += choices[i]-standard;
+                    else type4[0] += standard-choices[i];
                 } else{
-                    if(choices[i]>standard){
-                        type4[0] += choices[i]-standard;
-                    } else{
-                        type4[1] += standard-choices[i];
-                    }
+                    if(choices[i]>standard) type4[0] += choices[i]-standard;
+                    else type4[1] += standard-choices[i];
                 }
             }
         }
